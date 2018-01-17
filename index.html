@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Simply Weather</title>
+        <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="icon" href="weather-icon.png">
+        <link rel="manifest" href="manifest.json">
+	</head>
+	<body>
+        <div class="main_container">
+            
+            <div class="location-container">
+                <input type="search" name="location-search" placeholder="Enter city, country" class="location-search_text">
+                <button class="btn btn-primary location-search_button">&#10095;</button>
+            </div>  
+            <div class="city"></div>
+            <div class="container1">
+                <div class="temp"></div>
+                <div class="tempform__button-container">
+                    <button class="btn btn-primary convert__button">
+                        °F ↔ °C
+                    </button>
+                </div>
+            </div>
+            <div class="container2">
+                <div class="wthr"></div> 
+                <div class="icon_image">
+                <div class="icon sun-shower">
+                    <div class="cloud"></div>
+                    <div class="sun">
+                        <div class="rays"></div>
+                    </div>
+                    <div class="rain"></div>
+                </div>
+
+                <div class="icon thunder-storm">
+                    <div class="cloud"></div>
+                    <div class="lightning">
+                        <div class="bolt"></div>
+                        <div class="bolt"></div>
+                    </div>
+                </div>
+
+                <div class="icon cloudy">
+                    <div class="cloud"></div>
+                    <div class="cloud"></div>
+                </div>
+
+                <div class="icon flurries">
+                    <div class="cloud"></div>
+                    <div class="snow">
+                        <div class="flake"></div>
+                        <div class="flake"></div>
+                    </div>
+                </div>
+
+                <div class="icon sunny">
+                    <div class="sun">
+                        <div class="rays"></div>
+                    </div>
+                </div>
+
+                <div class="icon rainy">
+                    <div class="cloud"></div>
+                    <div class="rain"></div>
+                </div>
+            </div>
+            </div>
+            <div class="container3">
+                <div class="humidity_container">
+                    <span class="humidity_text">Humidity</span>
+                    <span class="humidity"></span>
+                </div>
+                <div class="wind_container">
+                    <span class="wind_text">Wind</span>
+                    <span class="wind"></span>
+                </div>
+            </div>
+            <div class="five-day-forecast_container">
+                <div class="day1-container">
+                  <div class="day1 future future-day"></div>
+                  <div class="day1-temp future"></div>
+                    <div class="day1-weather future"></div>
+                </div>
+                <div class="day2-container">
+                  <div class="day2 future future-day"></div>
+                  <div class="day2-temp future"></div>
+                    <div class="day2-weather future"></div>
+                </div>
+                <div class="day3-container">
+                  <div class="day3 future future-day"></div>
+                  <div class="day3-temp future"></div>
+                    <div class="day3-weather future"></div>
+                </div>
+                <div class="day4-container">
+                  <div class="day4 future future-day"></div>
+                  <div class="day4-temp future"></div>
+                    <div class="day4-weather future"></div>
+                </div>
+                <!--<div class="day5-container">
+                  <div class="day5 future future-day"></div>
+                  <div class="day5-temp future"></div>
+                </div>-->
+            </div>
+        </div>
+		<script src="main.js"></script>
+	</body>
+</html>

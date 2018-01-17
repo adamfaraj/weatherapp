@@ -1,0 +1,19 @@
+{
+  "name": "AF Weather",
+  "short_name": "AF Weather",
+  "icons": [{
+        "src": "weather-icon.png",
+        "sizes": "64x64",
+        "type": "image/webp"
+      }, {
+        "src": "weather-icon.png",
+        "sizes": "64x64"
+      }, {
+        "src": "weather-icon.png",
+        "sizes": "128x128",
+        "density": 2
+      }],
+  "start_url": "index.html",
+  "display": "standalone",
+  "orientation": "portrait"
+}
